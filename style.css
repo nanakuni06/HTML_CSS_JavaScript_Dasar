@@ -1,14 +1,43 @@
 /* Tambahkan kode CSS kalian di file ini */
+*{
+  font-family: 'Onest', sans-serif;
+  
+}
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
 header{
   display:flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background: rgb(59,56,113);
+  background: linear-gradient(90deg, rgba(59,56,113,1) 0%, rgba(130,202,205,1) 50%, rgba(15,176,209,1) 100%);
+}
+
+main{
+  padding: 40px;
+}
+
+section{
+  background-color: #abc4ff;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 20px;
+	font-size: 25px;
 }
 
 h1{
-  color: black;
+  color: white;
   font: 600 40px/120% "Urbanist", sans-serif;
   justify-content: left;
+  font-family: 'Onest', sans-serif;
 }
 
 ul{
@@ -25,16 +54,26 @@ a{
 }
 
 #description{
-  display: flex;
-  justify-content: space-around;
   padding-left: 100px;
   padding-right: 100px;
-  font: 100 14px/120% "Urbanist", sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+span{
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .img{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding-left: 0px;
+}
+
+img{
+  width: 90px;
+  height: 90px;;
 }
 
 .form {
@@ -46,7 +85,7 @@ a{
 label {
   display: flexbox;
   margin-bottom: 5px;
-  font: 100 14px/120% "Urbanist", sans-serif;
+  font-family: 'Onest', sans-serif;
 }
 
 input[type="text"],
@@ -63,8 +102,16 @@ input[type="number"] {
   justify-content: center;
 }
 
+
 input[type="checkbox"] {
   margin-right: 5px;
+}
+
+#link:hover{
+  background-color: blue;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  padding: 10px 20px;
 }
 
 .input-checkbox{
@@ -72,7 +119,7 @@ input[type="checkbox"] {
 }
 
 .form-button {
-    background-color: #4CAF50;
+    background-color: blue;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -80,10 +127,11 @@ input[type="checkbox"] {
     cursor: pointer;
     margin-top: 10px;
     display: flex;
+    font-family: 'Onest', sans-serif;
 }
 
 .form-button:hover {
-    background-color: #45a049;
+    background-color:black;
 }
 
 footer{
@@ -94,14 +142,145 @@ footer{
   background-color: whitesmoke;
 } 
 
-.footer-company-about{
-  font: 100 14px/120% "Urbanist", sans-serif; 
-}
-
 .icon{
   display: flex;
   justify-content:left; 
-  font: 100 14px/120% "Urbanist", sans-serif;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+#check{
+  color: black;
+  font-size: 13px;
+}
+
+/*footer*/
+footer{
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+	background-color: #809bce;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 12px;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+  display: flex;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	color:  inherit;
+	
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 12px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  #d1d1d1;
+	color: #ffffff;
+	font-size: 20px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 12px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+	font-size: 16px;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #abc4ff;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-list > p{
+  color: white;
+  font-size: 12px;
 }

@@ -108,7 +108,7 @@ input[type="checkbox"] {
 }
 
 #link:hover{
-  background-color: blue;
+  background-color: #daeaf6;
   letter-spacing: 2px;
   border-radius: 10px;
   padding: 10px 20px;
